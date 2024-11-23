@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header -->
+    <h1 class="game-title">✨ Tic Tac Toe ✨</h1>
+
+    <!-- Close Button -->
+    
+
+    <!-- Game Content -->
+    <div id="game-content" class="glass">
+      <!-- Info Section -->
+      <div class="info-section">
+        <p id="live-time" class="live-time"></p>
+        <p id="current-player" class="current-player">Press "Start Game" to begin!</p>
+      </div>
+
+      <!-- Game Board -->
+      <div id="game-board" class="game-board">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="start-btn" onclick="startGame()">🎮 Start Game</button>
+        <button onclick="resetGame()">🔄 Reset Game</button>
+      </div>
+
+      <!-- Game Status -->
+      <p id="status-message" class="status-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
